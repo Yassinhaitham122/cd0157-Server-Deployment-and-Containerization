@@ -1,0 +1,60 @@
+{
+    "nodegroup": {
+        "nodegroupName": "ng-904ed6b7",
+        "nodegroupArn": "arn:aws:eks:us-east-2:986946178909:nodegroup/eksctl-demo/ng-904ed6b7/12cfe151-8d48-2b85-d747-f39c57bd6982",
+        "clusterName": "eksctl-demo",
+        "version": "1.36",
+        "releaseVersion": "1.36.2-20260728",
+        "createdAt": "2026-08-02T16:21:38.703000+03:00",
+        "modifiedAt": "2026-08-04T00:22:08.819000+03:00",
+        "status": "ACTIVE",
+        "capacityType": "ON_DEMAND",
+        "scalingConfig": {
+            "minSize": 2,
+            "maxSize": 2,
+            "desiredSize": 2
+        },
+        "instanceTypes": [
+            "t2.medium"
+        ],
+        "subnets": [
+            "subnet-001bb10110f668bc8",
+            "subnet-01313d6a52033ae35",
+            "subnet-0b4c46cb4b97d6386"
+        ],
+        "amiType": "AL2023_x86_64_STANDARD",
+        "nodeRole": "arn:aws:iam::986946178909:role/eksctl-eksctl-demo-nodegroup-ng-90-NodeInstanceRole-MPj3WKPLbLZn",
+        "labels": {
+            "alpha.eksctl.io/cluster-name": "eksctl-demo",
+            "alpha.eksctl.io/nodegroup-name": "ng-904ed6b7"
+        },
+        "resources": {
+            "autoScalingGroups": [
+                {
+                    "name": "eks-ng-904ed6b7-12cfe151-8d48-2b85-d747-f39c57bd6982"
+                }
+            ]
+        },
+        "health": {
+            "issues": []
+        },
+        "updateConfig": {
+            "maxUnavailable": 1
+        },
+        "launchTemplate": {
+            "name": "eksctl-eksctl-demo-nodegroup-ng-904ed6b7",
+            "version": "1",
+            "id": "lt-025df999427f45c61"
+        },
+        "tags": {
+            "aws:cloudformation:stack-name": "eksctl-eksctl-demo-nodegroup-ng-904ed6b7",
+            "alpha.eksctl.io/cluster-name": "eksctl-demo",
+            "alpha.eksctl.io/nodegroup-name": "ng-904ed6b7",
+            "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-2:986946178909:stack/eksctl-eksctl-demo-nodegroup-ng-904ed6b7/09e05290-8e75-11f1-be57-0664e194c355",
+            "eksctl.cluster.k8s.io/v1alpha1/cluster-name": "eksctl-demo",
+            "aws:cloudformation:logical-id": "ManagedNodeGroup",
+            "alpha.eksctl.io/nodegroup-type": "managed",
+            "alpha.eksctl.io/eksctl-version": "0.229.0"
+        }
+    }
+}
